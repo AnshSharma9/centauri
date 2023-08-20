@@ -28,12 +28,8 @@ def home_view(request):
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('about/', views.about, name='about'),
-    path('gallery/', views.gallery, name='gallery'),
-    path('contact/', views.contact, name='contact'),
-    path('login/', views.login, name='login'),
+    path('/about', views.about, name='about'),
+    path('/gallery', views.gallery, name='gallery'),
+    path('/contact', views.contact, name='contact'),
+    path('/login', views.login, name='login'),
 ]
-
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

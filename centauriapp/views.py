@@ -24,24 +24,6 @@ def gallery(request):
     context = {'gallery_images': gallery_images}
     return render(request, 'gallery.html', context)
 
-def user_login(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-
-        if user is not None:
-            login(request, user)
-            # Redirect to the admin panel's dashboard
-            return redirect('admin_panel:dashboard')
-        else:
-            # Handle invalid login
-            pass
-
-    return render(request, 'website/login.html')
-
-def register(request):
-    return render(request, 'register.html')
 
 def contact(request):
     if request.method == "POST":

@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'centauriapp',
 ]
 
-ALLOWED_HOSTS = ['centaurischool.in', 'www.centaurischool.in', 'centauri-41ze.onrender.com']
+ALLOWED_HOSTS = ['centaurischool.in', 'www.centaurischool.in', 'centauri-41ze.onrender.com', '127.0.0.1']
 
 
 MIDDLEWARE = [
@@ -130,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
