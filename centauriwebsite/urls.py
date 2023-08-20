@@ -28,8 +28,8 @@ def home_view(request):
 
 urlpatterns = [
     path('', views.index, name='home'),
-    path('/about', views.about, name='about'),
-    path('/gallery', views.gallery, name='gallery'),
-    path('/contact', views.contact, name='contact'),
-    path('/login', views.login, name='login'),
+    path('about/', views.about, name='about'),   # Add trailing slashes
+    path('gallery/', views.gallery, name='gallery'),  # Add trailing slashes
+    path('contact/', views.contact, name='contact'),  # Add trailing slashes
+    path('login/', views.login, name='login'),
 ]
