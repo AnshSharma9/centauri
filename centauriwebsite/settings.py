@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'centauriapp',
 ]
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['centaurischool.in', 'www.centaurischool.in']
 
 
 MIDDLEWARE = [
@@ -130,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
@@ -148,3 +148,5 @@ EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+
