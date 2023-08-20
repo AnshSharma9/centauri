@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'centauriapp',
 ]
 
-ALLOWED_HOSTS = ['centaurischool.in', 'www.centaurischool.in', 'https://centauri-41ze.onrender.com']
+ALLOWED_HOSTS = ['centaurischool.in', 'www.centaurischool.in', 'centauri-41ze.onrender.com']
 
 
 MIDDLEWARE = [
