@@ -1,0 +1,221 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Centauris Pre-School</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><b>Centauri</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-login custom-login-btn" href="#">Login</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="page">
+
+<!--welcome-->
+<div class="welcome-animation">
+  <h2>Welcome to Centauri Pre-School</h2>
+</div>
+
+
+
+ <!-- About us -->
+ <div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="static\images\v.png" alt="About Us Image" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+      <h6>ABOUT US</h6>
+      <h3><span class="centauri-main"><b>Nurturing Curiosity and Enabling Bright Futures</b></span></h3>
+      <p>At Centauri Pre-School, we believe that every child is a universe of potential waiting to be explored. Our carefully crafted curriculum ignites curiosity by blending play, exploration, and structured learning.
+        Through hands-on activities and interactive lessons, we empower children to discover the world around them and develop essential skills for a successful future.
+        <br>
+        <br>
+        With <span class="centauri-main"><b>Centauri</b></span>, the journey from <span class="centauri-main"><b>Curiosity</b></span> to <span class="centauri-main"><b>Capability</b></span> begins here.</p>
+      <a class="custom-btn" href="/contact">Enroll Now</a>
+
+    </div>
+  </div>
+</div>
+<hr>
+  <!-- why centauri -->
+  <div class="container mt-4">
+    <div class="why-centauri">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h5>WHY <span class="centauri-main"><b>CENTAURI</b></span>?</h5>
+        <h3><span class="centauri-main"><b>The Best Learning Experience</b></span></h3>
+        <p>Elevated Educational Excellence</p>
+        <p>🌟 Experienced Educators</p>
+        <p>🌈 Holistic Development</p>
+        <p>🤝 Strong Parent Collaboration</p>
+
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <div class="square-container">
+          <h4><b>Kindness</b></h4>
+          <hr>
+          <p>Nurturing Compassionate and Caring Hearts.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="square-container">
+          <h4><b>Innovation</b></h4>
+          <hr>
+          <p>Fostering creativity and innovation in every young mind.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="square-container">
+          <h4><b>Growth</b></h4>
+          <hr>
+          <p>Equipping Minds, Shaping Futures.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="square-container">
+          <h4><b>Creativity</b></h4>
+          <hr>
+          <p>Where Imagination Knows No Boundaries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+<!--quotes-->
+<div class="motivational-quotes">
+  <div class="quote-container">
+    <i class="fas fa-quote-left"></i>
+    <p class="quote-text" id="quote">"Be the change you wish to see in the world."</p>
+  </div>
+</div>
+<br>
+<!--news and events-->
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="news-events-container">
+        <h4 class="section-heading">News and Events</h4>
+        <div class="news-events-scroll">
+          <!-- Scrolling content goes here -->
+          <div class="news-event-card">
+            <h5 class="news-event-title">ADMISSIONS OPEN</h5>
+            <p class="news-event-description">Admissions started for Session 2023-24.</p>
+          </div>
+          <!-- Add more news-event-card elements here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+<footer class="footer bg-dark text-light mt-4">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h><span class="centauri-main">Shahabad’s Best Pre-School</span></h6>
+        <h2><span class="centauri-main">Centauri Pre-School</span></h2>
+        <p>Unlocking tomorrow's potential, one step at a time at Centauri Preschool.</p>
+        <a class="custom-btn" href="/contact">Enroll Now</a>
+        <hr>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100089603120893"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/centaurishahabad/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Get in touch</h5>
+        <p>Near Main Post Office, Kishangarh road, Shahabad Markanda, 136135</p>
+        <p>Email: centaurishahabad@gmail.com</p>
+        <p>Phone: +91 94167-55271; +91 70158-78839</p>
+      </div>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--script for quotes-->
+  <script>
+    const quotes = [
+      "Be the change you wish to see in the world.",
+      "Dream big and dare to fail.",
+      "Believe you can and you're halfway there.",
+      "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+      "The only limit to our realization of tomorrow will be our doubts of today.",
+      "Your time is limited, don't waste it living someone else's life.",
+      "Stay positive, work hard, make it happen.",
+      "Every day is a fresh start.",
+      // Add more quotes as needed
+    ];
+  
+    const quoteElement = document.getElementById("quote");
+    let currentQuoteIndex = 0;
+  
+    function displayNextQuote() {
+      quoteElement.textContent = quotes[currentQuoteIndex];
+      currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+    }
+  
+    // Display the first quote immediately
+    displayNextQuote();
+  
+    // Update the quote every 5 seconds (5000 milliseconds)
+    setInterval(displayNextQuote, 5000);
+
+
+    
+
+  </script>
+  
+</body>
+</html>

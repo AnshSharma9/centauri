@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Welcome message -->
+<div class="welcome-animation">
+    <h2>QUERIES</h2>
+</div>
+
+  <!-- Contacts Table -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h5>All Contacts</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Query</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for contact in contacts %}
+            <tr>
+              <td>{{ contact[1] }}</td>
+              <td>{{ contact[2] }}</td>
+              <td>{{ contact[3] }}</td>
+              <td>{{ contact[4] }}</td>
+              <td>{{ contact[5] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
