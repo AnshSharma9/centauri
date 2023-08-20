@@ -17,6 +17,8 @@ Including another URLconf
 from django.urls import path
 from django.shortcuts import render
 from centauriapp import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 def home_view(request):
@@ -31,3 +33,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('login/', views.login, name='login'),
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
