@@ -39,7 +39,7 @@ def contact(request):
         subject = 'Contact Form Submission'
         message = f"Name: {name}\nSurname: {surname}\nEmail: {email}\nPhone: {phone}\nQuery: {query}"
         from_email = settings.EMAIL_HOST_USER  
-        recipient = settings.EMAIL_RECIPIENT
+        recipient = settings.MAIL_RECIPIENT
 
         msg = MIMEText(message)
         msg['Subject'] = subject
