@@ -46,10 +46,12 @@ def contact(request):
         msg['From'] = from_email
         msg['To'] = ', '.join(recipient)
 
-        smtp = smtplib.SMTP(settings.EMAIL_HOST, settings.EMAIL_PORT)
-        smtp.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
-        smtp.sendmail(from_email, recipient, msg.as_string())
-        smtp.quit()
+        with smtplib.SMTP(settings.EMAIL_HOST,settings.EMAIL_PORT ) as server:
+            server.starttls()
+            server.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
+            server.sendmail(from_email, recipient, msg.as_string())
+
+            server.quit()
 
         success_message = "Form submitted successfully"
         return render(request, "contact.html", {"success_message": success_message})
